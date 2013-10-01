@@ -25,7 +25,7 @@ in any of your controller or shell
 ```
 App::uses('CakeEmail', 'Network/Email');
 $Email = new CakeEmail('euromsg');
-$Email->to('guneycan@gmail.com');
+$Email->to('test@reciever.com');
 $Email->template('default', 'default');
 $Email->emailFormat('html');
 $Email->subject('Test Subject');
