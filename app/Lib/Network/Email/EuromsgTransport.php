@@ -70,7 +70,7 @@ class EuromsgTransport extends AbstractTransport {
         $emailRequest->ReplyAddress = $this->_config['ReplyAddress'];
 
         $emailRequest->ToEmailAddress = $to;
-        $emailRequest->Subject = $email->subject();
+        $emailRequest->Subject = mb_decode_mimeheader($email->subject());
         $emailRequest->HtmlBody = $message;
 
 
